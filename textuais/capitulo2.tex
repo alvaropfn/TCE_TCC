@@ -1,4 +1,4 @@
-\chapter[Capítulo 2]{2 Estado da Arte e Fundamentação Teórica}
+\chapter[Capítulo 2]{Estado da Arte e Fundamentação Teórica}
 \label{ch:cap2}
 
   Neste capítulo será apresentado o estado da arte referente a construção de sistemas de designs e prototipação assim como o material utilizado como embasamento teórico para o seu desenvolvimento.
@@ -30,10 +30,39 @@
   \item \href{https://designsystem.gov.au/}{Governo da Australia}
 \end{itemize}
 
-\section[\textit{Seção}]{\textit{Principios de um sistema de design}}
+\section[\textit{Seção}]{\textit{Principios e Tecnologias usadas para desenvolver um sistema de design}}
 
   Existem uma quantidade virtualmente infinita de maneiras de se construir um \textit{Design System}. Contudo uma das maneiras mais comuns de se proceder com seu desenvolvimento consiste em separar o conjunto de documentos gerados, agrupando-os em categorias de acordo com a sua finalidade.
 
-  No caso do Governo fedaral por exmeplo temos: Fundamentos Visuais, Componentes, Templates, Guias e Orientações. o Gitlab por sua vez organizou seu sistema em: Templates e Recursos
+  No caso do Governo Fedaral por exmeplo temos seu sistema de design separado em: Fundamentos Visuais, Componentes, Templates, Guias e Orientações. Esta separação foi feita com o intuito de melhor guiar a decisões de design, ser autênticos e específicos, em vez de genéricos e ser facilmente memorizáveis, fáceis de lembrar e utilizáveis no dia a dia. \cite{design_gov_federal}
 
-  % TODO citar tecnologias usadas no desenvolvimento de sistmeas de design
+  o Gitlab por sua vez optou por uma estrutura organizacional de seu sistema em: Fundação, Layout, Componentes, Visualização de dados, Regiões, Objetos, Conteudo, Usabilidade e Recursos de Design. Para a equipe do GitLab o foco era que a compania precisaria informar seus principios, valores e proposito, promover a produtividade e promover empatia \cite{gitlab_design}.
+
+  A Microsoft vem passando sucessivas mudanças. Com um grande leque de produtos que variam de serviços de nuvem a sistemas operacionais para dispositivos embarcados, unificar uma linguagem de comunicação sempre foi um problema para esta empresa. Atualmente um dos foco da microsoft vem sendo o desenvolvimento de um linguagem visual chamada Fluent Design com o intuito criar engajamento e permitir accesibilidade e internacionalização em um ecossistema de programas e serviços focados em produtividade que se estende por multiplas plataformas e sistemas operacionais. Separando inicialmente seu protuto por diferentes plataforma aem seguida seu projeto de designs e organiza elementos basicos, layout, controlesm estilo, movimento, "casca".
+
+\begin{citacao}[brazil]
+  Fluent experiences listen and adapt. They feel natural on the devices people use, from tablets to laptops, from PCs to televisions. They travel from the office to the living room to virtual worlds \cite{microsoft_fluent}.
+\end{citacao}
+
+  Estruturas de organização semelhantes se repetem e podem ser encontradas nos sistemas de design desenvolvidos, ou em desenvolvimento, de todas as empresas citadas na listagem da seção anterior.
+
+  O agrupamento desses documentos são ações subjetivas e que devem ser executadas em parceria e comum acordo entre a equipe de design e de desenvolvimento. A categorização de estilos e componentes precisa não somente manter uma identidade visual unica atravéz das suas diferentes categorizações como fazer sentido de modo facilitar a sua executabilidade pelos desenvolvedores.
+
+  Essa abordagem conjunta é importante pois o desenvolvimento de um sistema de design em silos isolados por designers resulta em: Desperdicio  de tempo e recursos humanos, sentimentos negativos e falta de compreensão sobre o design proposto \cite{GuilhermeGonzalez}. É possivel estrapolar facilmente esta mentalidade de crescimento de membros de uma euipe para a quantidade de equipes num projeto.
+
+  Softwares são muitas vezes construidos por times, que podem variar de times pequenos ate equipes muito grandes e a medida que cresce a quantidade de membros em um time cresce a dificuldade em manter uma experiência de usuario coesa pois cada pessoa trás opiniões e soluções com estilos diferentes que irão facilmente divergir \cite{airbnb_medium}
+
+  Para promover essa integração entre desenvolvedores e designers ferramentas de desenvolvimento e comunicação são utilizadas para não só construir e manter, mas tambem para compartilhar e compreender as decisões e praticas adotas. Dentro do vasto conjunto de ferramentas existentes para tal podemos citar algumas das mais conhecidas:
+
+\begin{itemize}
+  \item \href{https://www.sketch.com}{Sketch}
+  \item \href{https://www.adobe.com/br/products/xd.html?promoid=3NQZBBTZ&mv=other}{AdobeXD}
+  \item \href{https://www.figma.com/}{Figma}
+  \item \href{https://www.invisionapp.com/studio}{Studio}
+  \item \href{https://pencil.evolus.vn/}{Pencil}
+  \item \href{https://balsamiq.com/wireframes/}{Balsamiq}
+\end{itemize}
+
+  Vale salientar que as ferramentas anteriormente citadas são usadas principalmente para prototipação, A prototipação é um dos processos envolvidos no desenvolvimento de um produto minimo viável (MVP), do inglês \textit{Minimum Viable Product}, que é utilizado para simular e testar as caracteristicas de um produto ou serviço antes de seu lançamento \cite{voitto}
+
+  Os prototipos criados podem ser de baixa ou alta fideliade, estes termos de qualificação servem para descrever a distancia obtida pela aparência ou comportamento entre o protótipo e o produto final a ser desenvolvido e não é incomum serem usados ambos, em diferentes etapas do processo de prototipação dependendo de quão avançado está a validação ou quão refinado deseja-se descrever o comportamento do sitema ou serviço.

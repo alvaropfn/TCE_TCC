@@ -38,7 +38,7 @@
 
   o Gitlab por sua vez optou por uma estrutura organizacional de seu sistema em: Fundação, Layout, Componentes, Visualização de dados, Regiões, Objetos, Conteudo, Usabilidade e Recursos de Design. Para a equipe do GitLab o foco era que a compania precisaria informar seus principios, valores e proposito, promover a produtividade e promover empatia \cite{gitlab_design}.
 
-  A Microsoft vem passando sucessivas mudanças. Com um grande leque de produtos que variam de serviços de nuvem a sistemas operacionais para dispositivos embarcados, unificar uma linguagem de comunicação sempre foi um problema para esta empresa. Atualmente um dos foco da microsoft vem sendo o desenvolvimento de um linguagem visual chamada Fluent Design com o intuito criar engajamento e permitir accesibilidade e internacionalização em um ecossistema de programas e serviços focados em produtividade que se estende por multiplas plataformas e sistemas operacionais. Separando inicialmente seu protuto por diferentes plataforma aem seguida seu projeto de designs e organiza elementos basicos, layout, controlesm estilo, movimento, "casca".
+  A Microsoft vem passando sucessivas mudanças. Com um grande leque de produtos que variam de serviços de nuvem a sistemas operacionais para dispositivos embarcados, unificar uma linguagem de comunicação sempre foi um problema para esta empresa. Atualmente um dos foco da microsoft vem sendo o desenvolvimento de um linguagem visual chamada Fluent Design com o intuito criar engajamento e permitir accesibilidade e internacionalização em um ecossistema de programas e serviços focados em produtividade que se estende por multiplas plataformas e sistemas operacionais. Separando inicialmente seu protuto por diferentes plataforma. Seu projeto de design se organiza em elementos basicos, layout, controlesm estilo, movimento, "casca".
 
 \begin{citacao}[brazil]
   Fluent experiences listen and adapt. They feel natural on the devices people use, from tablets to laptops, from PCs to televisions. They travel from the office to the living room to virtual worlds \cite{microsoft_fluent}.
@@ -63,6 +63,29 @@
   \item \href{https://balsamiq.com/wireframes/}{Balsamiq}
 \end{itemize}
 
-  Vale salientar que as ferramentas anteriormente citadas são usadas principalmente para prototipação, A prototipação é um dos processos envolvidos no desenvolvimento de um produto minimo viável (MVP), do inglês \textit{Minimum Viable Product}, que é utilizado para simular e testar as caracteristicas de um produto ou serviço antes de seu lançamento \cite{voitto}
+  Vale salientar que as ferramentas anteriormente citadas são usadas principalmente para prototipação e não são as unicas existentes no mercado, mas algumas das principais. Quanto a prototipação ela é uma das etapapas dos processos envolvidos no desenvolvimento de um produto e é fundamental pois acelera etapas de validação e na consolidação de alguns elementos obtidos durante o levantamento de requisitos.
 
-  Os prototipos criados podem ser de baixa ou alta fideliade, estes termos de qualificação servem para descrever a distancia obtida pela aparência ou comportamento entre o protótipo e o produto final a ser desenvolvido e não é incomum serem usados ambos, em diferentes etapas do processo de prototipação dependendo de quão avançado está a validação ou quão refinado deseja-se descrever o comportamento do sitema ou serviço.
+  Os prototipos criados podem ser de baixa ou alta fideliade, estes termos de qualificação servem para descrever a distancia obtida pela aparência ou comportamento entre o protótipo e o produto final a ser desenvolvido e não é incomum serem usados ambos, em diferentes etapas do processo de desenvolvimento do sistema ou da prototipação dependendo de quão avançado está a validação ou quão refinado deseja-se descrever o comportamento do sistema ou serviço.
+
+  \begin{table*}[!htbp]
+    \centering
+    \caption{Vantagens e desvantagens do nivel de fidelidade de prototipos}
+    \begin{tabular}{|c|l|l|}
+    \hline
+    \rowcolor[HTML]{DDDDDD}
+    Fidelidade &
+      Vantagens &
+      Desvantagens \\ \hline
+    Baixa &
+      \begin{tabular}[c]{@{}l@{}}Baixo custo de desenvolvimento\\ Avaliação de múltiplos conceitos\\ Aponta problemas de telas\\ Prova de conceito\end{tabular} &
+      \begin{tabular}[c]{@{}l@{}}Checagem de erro limitada\\ Especificação de detalhamento pobre\\ Voltado ao facilitador\\ Sem valor após especificação de requisitos\\ Valor limitado para testes de usabilidade\\ Fluxo e navegação limitados\end{tabular} \\ \hline
+    Alta &
+      \begin{tabular}[c]{@{}l@{}}Funcionalidade Completa\\ Interativo\\ Voltado ao usuário\\ Esquema de navegação claros\\ Permite testes exploratórios\\ Sensação do produto final\\ Atua como especificação viva\end{tabular} &
+      \begin{tabular}[c]{@{}l@{}}Desenvolvimento mais custoso\\ Demorado para criar\\ Ineficiente para provas de conceito\\ Ineficiente para obtenção de requisitos\end{tabular} \\ \hline
+    \end{tabular}
+    \label{table-fideliade-alta-vs-baixa}
+    \fonte{\cite{fideliade_alta_vs_baixa}}
+  \end{table*}
+  
+  É comum que o desenvolvimento do sistema de design anteceda um passo de muita importância que é a codificação desse design criando assim uma biblioteca de componentes utilizaveis tanto para ao desenvolvimento do prototipo como do produto. Todas as empresas e entides citadas no inicio do capitulo possuem essa implementação em maior ou menor grau de cobertura dos componentes, algumas em diferentes linguagens de programação para uma ou mais plataformas, como a web ou mobile.
+  O Tribunal de contas do estado conta com uma implementação feita anteriormente a criação do sistema de design e com ajuda deste trabalho iremos ampliar o escopo dessa biblioteca.

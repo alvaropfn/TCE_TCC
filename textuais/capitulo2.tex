@@ -1,13 +1,13 @@
 \chapter[Capítulo 2]{Estado da Arte e Fundamentação Teórica}
 \label{ch:cap2}
 
-  Neste capítulo será apresentado o estado da arte referente a construção de sistemas de designs e prototipação assim como o material utilizado como embasamento teórico para o seu desenvolvimento.
+  Neste capítulo será apresentado o estado da arte referente a construção de sistemas de designs e prototipação, assim como o material utilizado como embasamento teórico para o seu desenvolvimento.
 
 \section{Afinal o que é um sistema de design}
   Realizando uma breve pesquisa na internet a expressão mais comumente encontrada para descrever o que seria um sistema de design remetem a Nathan Curtis e a frase \textit{"A Design System isn’t a Project. It’s a Product, Serving Products".} \cite{descricao_sistema_design} Poderiamos traduzir para Um sistema de design não é um projeto. É um produto servindo outros produtos.
 
-  Um sistema de design é a representação viva de um conjunto de documentos com o intuito de unificar a identidade visual de um ecosistema de produtos de uma instituição. Para servir a este proposito esses documentos não podem ser estáticos, devem permitir constantes mudanças e conseguir manter a ideia central de poder encaixar formas sem perder consistência \cite{design_gov_digital}.
-  Em 2019 o Governo Federal decidiu iniciar a construção do seu sistema  de design com uma motivação clara
+  Um sistema de design é a representação viva de um conjunto de documentos com o intuito de unificar a identidade visual de um ecossistema de produtos de uma instituição. Para servir a este propósito esses documentos não podem ser estáticos, devem permitir constantes mudanças e conseguir manter a ideia central de poder encaixar formas sem perder consistência \cite{design_gov_digital}.
+  Em 2019, o Governo Federal decidiu iniciar a construção do seu sistema  de design com uma motivação clara
 
 \begin{citacao}[brazil]
   [...]A iniciativa potencializa a eficiência e a eficácia dos usuários na utilização de interfaces para acesso aos serviços e aos sistemas de Governo, possibilitando uma única curva de aprendizado e garantindo a previsibilidade na utilização dos diferentes sistemas. \cite{design_gov_federal}
@@ -15,9 +15,9 @@
 
   Para Gonzalez um sistema de design é "[...]um conjunto de padrões para design e código, componentizado que unificam as duas práticas". \cite{GuilhermeGonzalez} Para o Governo Federal um \textit{Design System} "[...]tem como objetivo guiar todos os responsáveis pela construção de interfaces interativas orientadas à experiência única do usuário, considerando a acessibilidade e a usabilidade dos sistemas". \cite{design_gov_federal}
 
-  É fato que grandes entidades vem adotando a elaboração de sistemas de design com o intuito de se beneficiar das vantagens proporcionadas pela unificação da lingagem unificada de comunicação com usuarios de seus sitemas, acelerar o processo de prototipação de seus layoutes e interfaces e, deminuir o tempo de desenvolvimento das aplicações por meio do respaldo de bibliotecas de componentes mantidas por esses sistemas.
+  É fato que grandes entidades vêm adotando a elaboração de sistemas de design com o intuito de se beneficiar das vantagens proporcionadas pela unificação da linguagem unificada de comunicação com usuários de seus sistemas, acelerar o processo de prototipação de seus layouts e interfaces e, deminuir o tempo de desenvolvimento das aplicações por meio do respaldo de bibliotecas de componentes mantidas por esses sistemas.
 
-  Para citar algumas das empresas e entiades que possuem ou estão e precesso de desenvolvimento de um sitema de design:
+  Para citar algumas das empresas e entidades que possuem ou estão em processo de desenvolvimento de um sitema de design:
 
 \begin{itemize}
   \item \href{https://material.io/design/}{Google}
@@ -34,11 +34,11 @@
 
   Existem uma quantidade virtualmente infinita de maneiras de se construir um \textit{Design System}. Contudo uma das maneiras mais comuns de se proceder com seu desenvolvimento consiste em separar o conjunto de documentos gerados, agrupando-os em categorias de acordo com a sua finalidade.
 
-  No caso do Governo Fedaral por exmeplo temos seu sistema de design separado em: Fundamentos Visuais, Componentes, Templates, Guias e Orientações. Esta separação foi feita com o intuito de melhor guiar a decisões de design, ser autênticos e específicos, em vez de genéricos e ser facilmente memorizáveis, fáceis de lembrar e utilizáveis no dia a dia. \cite{design_gov_federal}
+  No caso do Governo Fedaral, por exemplo, temos seu sistema de design separado em: Fundamentos Visuais, Componentes, Templates, Guias e Orientações. Esta separação foi feita com o intuito de melhor guiar a decisões de design, ser autênticos e específicos, em vez de genéricos e ser facilmente memorizáveis, fáceis de lembrar e utilizáveis no dia a dia. \cite{design_gov_federal}
 
-  o Gitlab por sua vez optou por uma estrutura organizacional de seu sistema em: Fundação, Layout, Componentes, Visualização de dados, Regiões, Objetos, Conteudo, Usabilidade e Recursos de Design. Para a equipe do GitLab o foco era que a compania precisaria informar seus principios, valores e proposito, promover a produtividade e promover empatia \cite{gitlab_design}.
+  o Gitlab por sua vez optou por uma estrutura organizacional de seu sistema em: Fundação, Layout, Componentes, Visualização de dados, Regiões, Objetos, Conteúdo, Usabilidade e Recursos de Design. Para a equipe do GitLab o foco era que a companhia precisaria informar seus princípios, valores e propósito, promover a produtividade e promover empatia \cite{gitlab_design}.
 
-  A Microsoft vem passando sucessivas mudanças. Com um grande leque de produtos que variam de serviços de nuvem a sistemas operacionais para dispositivos embarcados, unificar uma linguagem de comunicação sempre foi um problema para esta empresa. Atualmente um dos foco da microsoft vem sendo o desenvolvimento de um linguagem visual chamada Fluent Design com o intuito criar engajamento e permitir accesibilidade e internacionalização em um ecossistema de programas e serviços focados em produtividade que se estende por multiplas plataformas e sistemas operacionais. Separando inicialmente seu protuto por diferentes plataforma. Seu projeto de design se organiza em elementos basicos, layout, controlesm estilo, movimento, "casca".
+  A Microsoft vem passando sucessivas mudanças. Com um grande leque de produtos que variam de serviços de nuvem a sistemas operacionais para dispositivos embarcados, unificar uma linguagem de comunicação sempre foi um problema para esta empresa. Atualmente, um dos foco da microsoft vem sendo o desenvolvimento de um linguagem visual chamada Fluent Design com o intuito criar engajamento e permitir accesibilidade e internacionalização em um ecossistema de programas e serviços focados em produtividade que se estende por múltiplas plataformas e sistemas operacionais. Separando inicialmente seu protuto por diferentes plataformas. Seu projeto de design se organiza em elementos básicos, layout, controles, estilo, movimento, "casca".
 
 \begin{citacao}[brazil]
   Fluent experiences listen and adapt. They feel natural on the devices people use, from tablets to laptops, from PCs to televisions. They travel from the office to the living room to virtual worlds \cite{microsoft_fluent}.
@@ -46,13 +46,13 @@
 
   Estruturas de organização semelhantes se repetem e podem ser encontradas nos sistemas de design desenvolvidos, ou em desenvolvimento, de todas as empresas citadas na listagem da seção anterior.
 
-  O agrupamento desses documentos são ações subjetivas e que devem ser executadas em parceria e comum acordo entre a equipe de design e de desenvolvimento. A categorização de estilos e componentes precisa não somente manter uma identidade visual unica atravéz das suas diferentes categorizações como fazer sentido de modo facilitar a sua executabilidade pelos desenvolvedores.
+  O agrupamento desses documentos são ações subjetivas e que devem ser executadas em parceria e comum acordo entre a equipe de design e de desenvolvimento. A categorização de estilos e componentes precisa não somente manter uma identidade visual única através das suas diferentes categorizações como fazer sentido de modo facilitar a sua executabilidade pelos desenvolvedores.
 
-  Essa abordagem conjunta é importante pois o desenvolvimento de um sistema de design em silos isolados por designers resulta em: Desperdicio  de tempo e recursos humanos, sentimentos negativos e falta de compreensão sobre o design proposto \cite{GuilhermeGonzalez}. É possivel estrapolar facilmente esta mentalidade de crescimento de membros de uma euipe para a quantidade de equipes num projeto.
+  Essa abordagem conjunta é importante, pois o desenvolvimento de um sistema de design em silos isolados por designers resulta em: Desperdício  de tempo e recursos humanos, sentimentos negativos e falta de compreensão sobre o design proposto \cite{GuilhermeGonzalez}. É possivel estrapolar facilmente esta mentalidade de crescimento de membros de uma euipe para a quantidade de equipes num projeto.
 
-  Softwares são muitas vezes construidos por times, que podem variar de times pequenos ate equipes muito grandes e a medida que cresce a quantidade de membros em um time cresce a dificuldade em manter uma experiência de usuario coesa pois cada pessoa trás opiniões e soluções com estilos diferentes que irão facilmente divergir \cite{airbnb_medium}
+  Softwares são muitas vezes construidos por times, que podem variar de times pequenos até equipes muito grandes e a medida que cresce a quantidade de membros em um time cresce a dificuldade em manter uma experiência de usuário coesa, pois cada pessoa traz opiniões e soluções com estilos diferentes que irão facilmente divergir \cite{airbnb_medium}
 
-  Para promover essa integração entre desenvolvedores e designers ferramentas de desenvolvimento e comunicação são utilizadas para não só construir e manter, mas tambem para compartilhar e compreender as decisões e praticas adotas. Dentro do vasto conjunto de ferramentas existentes para tal podemos citar algumas das mais conhecidas:
+  Para promover essa integração entre desenvolvedores e designers, ferramentas de desenvolvimento e comunicação são utilizadas para não só construir e manter, mas também para compartilhar e compreender as decisões e práticas adotadas. Dentro do vasto conjunto de ferramentas existentes para tal, podemos citar algumas das mais conhecidas:
 
 \begin{itemize}
   \item \href{https://www.sketch.com}{Sketch}
@@ -63,13 +63,13 @@
   \item \href{https://balsamiq.com/wireframes/}{Balsamiq}
 \end{itemize}
 
-  Vale salientar que as ferramentas anteriormente citadas são usadas principalmente para prototipação e não são as unicas existentes no mercado, mas algumas das principais. Quanto a prototipação ela é uma das etapapas dos processos envolvidos no desenvolvimento de um produto e é fundamental pois acelera etapas de validação e na consolidação de alguns elementos obtidos durante o levantamento de requisitos.
+  Vale salientar que as ferramentas anteriormente citadas são usadas principalmente para prototipação e não são as únicas existentes no mercado, mas algumas das principais. Quanto a prototipação, ela é uma das etapas dos processos envolvidos no desenvolvimento de um produto e é fundamental, pois acelera etapas de validação e na consolidação de alguns elementos obtidos durante o levantamento de requisitos.
 
-  Os prototipos criados podem ser de baixa ou alta fideliade, estes termos de qualificação servem para descrever a distancia obtida pela aparência ou comportamento entre o protótipo e o produto final a ser desenvolvido e não é incomum serem usados ambos, em diferentes etapas do processo de desenvolvimento do sistema ou da prototipação dependendo de quão avançado está a validação ou quão refinado deseja-se descrever o comportamento do sistema ou serviço.
+  Os protótipos criados podem ser de baixa ou alta fidelidade, estes termos de qualificação servem para descrever a distância obtida pela aparência ou comportamento entre o protótipo e o produto final a ser desenvolvido e não é incomum serem usados ambos, em diferentes etapas do processo de desenvolvimento do sistema ou da prototipação dependendo de quão avançado está a validação ou quão refinado deseja-se descrever o comportamento do sistema ou serviço.
 
   \begin{table*}[!htbp]
     \centering
-    \caption{Vantagens e desvantagens do nivel de fidelidade de prototipos}
+    \caption{Vantagens e desvantagens do nível de fidelidade de protótipos}
     \begin{tabular}{|c|l|l|}
     \hline
     \rowcolor[HTML]{DDDDDD}
@@ -87,5 +87,5 @@
     \fonte{\cite{fideliade_alta_vs_baixa}}
   \end{table*}
   
-  É comum que o desenvolvimento do sistema de design anteceda um passo de muita importância que é a codificação desse design criando assim uma biblioteca de componentes utilizaveis tanto para ao desenvolvimento do prototipo como do produto. Todas as empresas e entides citadas no inicio do capitulo possuem essa implementação em maior ou menor grau de cobertura dos componentes, algumas em diferentes linguagens de programação para uma ou mais plataformas, como a web ou mobile.
+  É comum que o desenvolvimento do sistema de design anteceda um passo de muita importância que é a codificação desse design, criando assim, uma biblioteca de componentes utilizáveis tanto para o desenvolvimento do protótipo como do produto. Todas as empresas e entidades citadas no início do capítulo possuem essa implementação em maior ou menor grau de cobertura dos componentes, algumas em diferentes linguagens de programação para uma ou mais plataformas, como a web ou mobile.
   O Tribunal de contas do estado conta com uma implementação feita anteriormente a criação do sistema de design e com ajuda deste trabalho iremos ampliar o escopo dessa biblioteca.

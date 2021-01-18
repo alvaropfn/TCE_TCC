@@ -33,7 +33,7 @@
 %%  Adiciona as opções chapter=Title, chapter=TITLE, section=Title,
 %%  section=TITLE, subsection=TITLE, subsection=Title,
 %%  subsubsection=TITLE, subsubsection=Title
-%%  que alterna os títulos de divisoes do tipo capitulo entre
+%%  que alterna os títulos de divisoes do tipo capítulo entre
 %%  caixa baixa e caixa alta. Porem, apenas a implementacao de chapter esta
 %%  completa.
 %%
@@ -47,7 +47,7 @@
 %%   \imprimirtitulo, \imprimirautor e \imprimirdata para serem meras traducoes
 %%   \title, \author, \date, \thetitle, \theauthor e \thedate, respectivamente.
 %%  Adiciona o comando \renewcommand*{\cftchapterdotsep}{\cftdotsep} para que os
-%% capitulos tambem tenham leaders.
+%% capítulos tambem tenham leaders.
 %%
 %% 2013.3.13 07h33	laurocesar
 %%  Aprimoramentos nas notas de rodapé propostas por gilsonolegario
@@ -101,13 +101,13 @@
 %%  Uso da fonte de \ABNTEXfontereduzida em \caption, \legend e \footnote
 %%  Redefinicao da implementacao do ambiente resumo: agora ele usa abstract. 
 %%  Criacao de \resumoname e do ambiente resumoumacoluna.
-%%  Tratamento especial dos capitulos e divisoes pre-textuais no caso da option
+%%  Tratamento especial dos capítulos e divisoes pre-textuais no caso da option
 %% article estar habilitada.
-%%  Altera a metrica usada para calcular o espacamento dos capitulos abnt de 
+%%  Altera a metrica usada para calcular o espacamento dos capítulos abnt de 
 %% \textwidth para \columnwidth.
 %%
 %% 2013.1.3 09h02 laurocesar
-%%  Correção do estilo de capitulo de \renewcommand{\beforechapskip}{0cm} para
+%%  Correção do estilo de capítulo de \renewcommand{\beforechapskip}{0cm} para
 %%  setlength{\beforechapskip}{0cm}
 %%  Inclusão de \title{} \author{} e \date{} nos equivalentes em portugues
 %%
@@ -341,7 +341,7 @@
 % ---
 
 % ---
-% Comando que cria capitulos nao numerados ja com bookmark anotado
+% Comando que cria capítulos nao numerados ja com bookmark anotado
 % ---
 \newcommand{\pretextualchapter}[1]{%
   \addtocounter{abntex@bookmarkcounter}{1}%
@@ -420,15 +420,15 @@
 \renewcommand{\cfttablename}{\tablename\space}
 \renewcommand*{\cfttableaftersnum}{~~--}	
  
-% fonte das partes e do capitulo do TOC
+% fonte das partes e do capítulo do TOC
 \renewcommand{\tocheadstart}{\ABNTEXchapterfont}
 
-% leaders para os capitulos
+% leaders para os capítulos
 \renewcommand*{\cftchapterdotsep}{\cftdotsep}
 % -----
 
 % ---
-% Configuracao dos titulos dos capitulos
+% Configuracao dos titulos dos capítulos
 % Novo estido do memoir 
 % ABNT NBR 14724-2011 - 5.2.2-5.2.4; ABNT NBR 6024-2003 - 3.1-3.8
 \provideboolean{abntex@innonumchapter}
@@ -457,16 +457,16 @@
   \setsubsecheadstyle{\ABNTEXsubsectionfont\ABNTEXsubsectionfontsize\ABNTEXsubsectionupperifneeded}
   \setsubsubsecheadstyle{\ABNTEXsubsubsectionfont\ABNTEXsubsubsectionfontsize\ABNTEXsubsubsectionupperifneeded}
   
-  % impressao do numero do capitulo
+  % impressao do numero do capítulo
   \renewcommand{\chapternamenum}{}
   
-  % impressao do nome do capitulo
+  % impressao do nome do capítulo
   \renewcommand{\printchaptername}{%
    \chaptitlefont
    \ifthenelse{\boolean{abntex@apendiceousecao}}{\appendixname}{}%
   }
     
-  % impressao do titulo do capitulo
+  % impressao do titulo do capítulo
   \def\printchaptertitle##1{%
     \chaptitlefont%
     \ifthenelse{\boolean{abntex@innonumchapter}}{\centering\ABNTEXchapterupperifneeded{##1}}{%
@@ -476,7 +476,7 @@
 	}    
   }
        
-  % impressao do numero do capitulo     	
+  % impressao do numero do capítulo     	
   \renewcommand{\printchapternum}{%
      \setboolean{abntex@innonumchapter}{false}
      \chapnumfont%
@@ -487,7 +487,7 @@
   }
   \renewcommand{\afterchapternum}{}
   
-  % impressao do capitulo nao numerado
+  % impressao do capítulo nao numerado
   \renewcommand\printchapternonum{%
      \setboolean{abntex@innonumchapter}{true}%
     }
@@ -504,7 +504,7 @@
 \makeoddhead{abntheadings}{\ABNTEXfontereduzida\textit\rightmark}{}{\ABNTEXfontereduzida\thepage}
 \makeheadrule{abntheadings}{\textwidth}{\normalrulethickness}
 
-% Cabecalho do inicio do capitulo
+% Cabecalho do inicio do capítulo
 \makepagestyle{abntchapfirst}
 \makeoddhead{abntchapfirst}{}{}{\ABNTEXfontereduzida\thepage}
 % ---
@@ -556,7 +556,7 @@
 \newcommand{\titulo}[1]{\title{#1}}
 \newcommand{\imprimirtitulo}{\thetitle}
 
-% Comandos de dados - autor (use \and para multiplos autores)
+% Comandos de dados - autor (use \and para múltiplos autores)
 \newcommand{\autor}[1]{\author{#1}}
 \newcommand{\imprimirautor}{\theauthor}
 

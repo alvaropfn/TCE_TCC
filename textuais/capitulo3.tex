@@ -1,134 +1,94 @@
-\chapter[Capítulo 3]{Situação Atual e Desenvolvimento do Sistema de Design no TCE-RN}
-\label{ch:cap3}
+\chapter[O Figma]{O Figma e as motivaçoes de sua escolha como ferramenta de Prototipação.}
+\label{ch:cap4}
 
-  Tendo em vista, o potencial que ferramentas de design e prototipação possuem em acelerar o desenvolvimento e a validação de sistemas e serviços além da necessidade do Tribunal de Contas do Estado em agilizar os seus processos de desenvolvimento e a crescente demanda por novos sistemas e pela evolução dos sistemas e serviços prestados, não somente a suas diretorias como aos entes jurisdicionados, foi abordada junto a DIN se haveria por parte deles o interesse no desenvolvimento de um sistema de design. A Diretoria de Informática se mostrou interessada e foi dado início ao desenvolvolvimento do trabalho.
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=\linewidth]{SketchFigmaAdobe.jpg}
+  \caption{Figma e seus principais concorrentes.}
+  \href{https://medium.com/@xccelerate/figma-vs-adobe-xd-vs-sketch-which-wireframing-tool-is-the-best-2043d458f940}{Fonte da imagem: Medium}
+  \label{fig:tcenglib}
+\end{figure}
 
-  Como visto anteriormente, um sistema de design é um produto, que por sua vez tem a intenção de servir outros produtos, que seriam os sistemas desenvolvidos pela instituição baseados nas diretivas criadas por esse sistema, é de responsabiliade do Sistema de Design (SD) possibilitar tanto a prototipação rápida, de baixa fidelidade, como a de alta fidelidade, assim como validar as evoluções feitas em sistemas preexistentes junto aos clientes. Sendo essas apenas algumas das responsabiliades desse produto.
+Como foi dito no capitulo anterior existem diversas ferramentas de design disponiveis no mercado e os principais concorrentes são o Sketch e o AdobeXD. Ambos ferramentas muito boas e em diferentes estagios de desenvolvimento. No decorrer deste capitulo falarei mais sobre cada uma das ferramentas e explicarei os motivos que levaram a adoção do Figma para o desenvolvimento deste trabalho.
 
-\section{Situação Atual Do Design no TCE-RN} \label{secao31}
-  A história do Tribunal de Contas do Estado começou oficialmente em 12 de janeiro de 1961, data oficial da sua criação \cite{historia_tribunal} O tribunal vem ao longo desses anos evoluindo sempre e gerenciando projetos cada vez mais complexos, agregando as responsabilidades de fiscalização e divulgação dos pareceres do poder legislativo Municipal. Contudo do ponto de vista do design o TCE-RN avançou pouco nos últimos anos. Apesar de possuir em suas políticas de desenvolvimento a obrigatoriedade da construção de um protótipo que precisa ser validado junto ao cliente que irá usar o software ou serviço, para saber se o mesmo tem suas necessidades atendidas essa prototipação atualmente é feita por meio da ferramenta de prototipação Pencil Project (Pencil) que possue varias limitações em relação a ferramentas de design mais modernas como demonstrado na tabela \ref{table-figma_vs_pencil} Vantagens Figma vs Pencil.
+\section{Sketch} \label{Sketch}
 
-  Em 2019 o TCE-RN iniciou o desenvolvimento de uma nova biblioteca de componentes para construção de interfaces web. Essa biblioteca é construída sobre uma plataforma de desenvolvimento em Javascript chamada Angular, Javascript por sua vez é uma linguagem de Programação de propósito geral, multiparadigma que juntamente com as tecnologias HTML (HyperText Markup Language), uma lingaugem de marcação de hipertexto e CSS (Cascate Style Sheet), o mecanismo de acionamento de estilos de interpretadores web representam os 3 pilares fundamentais usados no desenvolvimento de sistemas web modernos.
+Sketch foi desenvolvido pela Bohemian Coding e foi liberado originalmente para macOS em 2010. É considerado uma dos primeiros softwares de design de experiencia de usuario e tambem um dos primeiros softwares disruptivos no cenario UX/UI.
 
-  Para a construção do seu front-end, que são sistemas com a qual os usuários interagem diretamente, o tribunal usa tecnologias modernas e em constante evolução, contudo para a prototipação, o Pencil oferece poucas vantagens em relação a maioria das ferramentas citadas no Capítulo \ref{ch:cap2} como por exemplo testes de usabilidade ou a presença de animações ou transições que aproximem o usuário da experiência final do uso do software em Desenvolvimento.
+Como funcionalidades chaves o Sketch possui suporte a plugins assim como um preview instantanêo das alterações dos prototipos, presets de exportação automaticos de componentes, grades e linhas de guia e suporte a salvamento dos documentos em nuvem.
 
-  \begin{table*}[!ht]
-    \centering
-    \caption{Vantagens Figma vs Pencil}
-    \begin{tabular}{lll}
-      
-      \rowcolor[HTML]{AAAAAA}
-      Caracteristicas             &
-      Figma                       &
-      Pencil                      \\
-      \rowcolor[HTML]{DDDDDD}
-      Facil de usar               &
-      sim                         &
-      sim                         \\
-      Colaborativo                &
-      sim                         &
-      não                         \\
-      \rowcolor[HTML]{DDDDDD}
-      Animação                    &
-      sim                         &
-      não                         \\
-      Arrastar e soltar           &
-      sim                         &
-      sim                         \\
-      \rowcolor[HTML]{DDDDDD}
-      Prototipo de Software       &
-      sim                         &
-      não                         \\
-      Prototipação de Interfaces  &
-      sim                         &
-      sim                         \\
-      \rowcolor[HTML]{DDDDDD}
-      Prototipação de UX          &
-      sim                         &
-      não                         \\
-      Teste de Usabilidade        &
-      sim                         &
-      não                         \\
-      \rowcolor[HTML]{DDDDDD}
-      Controle de Versao          &
-      sim                         &
-      não                         \\
-    \end{tabular}
-    \label{table-figma_vs_pencil}
-    \fonte{\cite{figma_vs_pencil}}
-  \end{table*}
+Algumas das vantagens do Sketch:
+\begin{itemize}
+  \item Desin facilmente escalável.
+  \item permite a construção de bibliotecas facilitando a manutenibilidade de componentes.
+  \item A funcionalidade: Pixel-perfect torna o design muito preciso.
+  \item Renderização rápida e precisa em relação ao que sera mostrado no browser.
+  \item Alto engajamento e suporte da comunidade.
+\end{itemize}
 
-  O fluxo de trabalho até o momento para o desenvolvimento de protótipos consiste em copiar um projeto preexistente e utilizar a maior quantidade possível de elementos de layout desse documento do Pencil. No entando como foi dito anteriormente o tribunal passou a evoluir a biblioteca de componentes de front-end dos seus sistemas, e por não possuir um sistema de versionamento o Pencil não é capaz de refletir essas modificações. Também não é permitido que o usuário teste o fluxo da experiência de uso dos sistemas com o usuário. Por esses e outros motivos como demonstrado na Tabela \ref{table-figma_vs_pencil} o Figma foi escolhido como ferramenta de desenvolvimento de sistema design para ser usado neste trabalho, que possui o intuito de trazer uma maneira mais dinâmica de criar e testar as interfaces do TCE-RN e permitir que a todo sistema possa sofrer mudanças e evoluções mais suavemente de maneira concisa e consistente.
+Algumas desvantagens do Sketch:
+\begin{itemize}
+  \item Não possui versão gratuita.
+  \item Disponivel apenas para macOS.
+  \item Não possui mecanismos de edição e retoque de imagem.
+  \item não possui funcionaliades de prototipação próprias dependendo de plugins.
+  \item Muito dependente da comunidade em relação a manutenção de funcionalidades providas por plugins.
+  \item Exigente em relação a recursos de hardware.
+\end{itemize}
 
-\section{Reconstrução Do Modelo Existente} \label{secao32}
+\section{AdobeXD} \label{AdobeXD}
 
-  O ponto de partida foi recriar modelos dos elementos preexistentes nos layouts de sistemas do TCE-RN. Foram favorecidos os sistemas que implementassem a bibliteca de componentes recém desenvolvida em detrimento as demais, pois estes expressam de maneira mais acurada as intenções do tribunal quanto a aparência e usabilidade a serem experimentadas pelos usuários num futuro próximo.
+O AdobeXD é a mais nova das ferramentas de design citadas neste capitulo, tendo sido lançada em 2017 pela Adobe, o software foi publicado suportando execução tanto no mac quanto no windows com extensão a testes de protototipos no ios e no android.
 
-  Executando uma instância de exemplo da biblioteca de componentes criadas em Angular e usando o navegador Brave, foi possível utilizar uma das funcionalidades desse navegador, o CSS Overview, para inspecionar as características do projeto e a situação atual da biblioteca, tornando possível realizar o levantamento dos diferentes aspectos dos componentes como por exemplo a quantidade de cores diferentes presentes nas páginas, onde essas cores eram usadas, quais os códigos hexadecimais referente a cada cor, quantos e quais os breakpoints de tamanho das mídias, e outras informações relevantes. Um exemplo de inspeção de página pode ser encontrado na figura \ref{fig:tcenglib} Análise da biblioteca de componentes existente no TCE-RN.
+Possui as principais funcionalidades a co-edição, o suporte a web, desktop e mobile, drag and drop de apartir do artboard, animações automaticas e integração multi plataforma.
 
-  \begin{figure}[!h]
-    \includegraphics[width=\linewidth]{tce-ng-lib.jpg}
-    \caption{Análise da biblioteca de componentes existente no TCE-RN.}
-    \label{fig:tcenglib}
-  \end{figure}
+Algumas das vantagens do AdobeXD:
+\begin{itemize}
+  \item Ferramenta de design mantida pela Adobe passa a sensação de robuste e confiança.
+  \item Permite a edição e o reuso de elementos com suporte a redimensionamento em grupos.
+  \item Prototipos interativos com suporte a multiplas plataformas.
+  \item Facilidade de uso por ususarios com experiência com outros produtos da Adobe.
+  \item Salvamento em nuvem e edição de permissões de acesso como por exemplo apenas visualizar.
+\end{itemize}
 
-  De posse dos elementos fundamentais que já estavam sendo usados em conjunto com as métricas que os mesmos possuíam o passo seguinte foi a construção dessa instância atual na ferramenta Figma proposta pelas vantagens citadas no capítulo \ref{ch:cap2}. Em um primeiro momento foi utilizada a metodologia atomica de design para o desenvolvimento desse modelo inicial "In the natural world, atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms" \cite{atomic_design}. Construir elementos mais complexos a partir de elementos mais simples associado a uma ação facilitada por uma funcionalidade do Figma de permitir a construção de "componentes mestres", estruturas das quais podem ser criadas instâncias e que quando edições são realizadas no componente mestre as mesmas são herdadas para todos os elementos copiados a partir deste, o que permitiu reduzir a carga de trabalho, pois mudanças e melhorias nos elementos não precisavam ser replicadas em elementos acima na construção hierárquica dos componentes.
+Algumas desvantagens do AdobeXD:
+\begin{itemize}
+  \item Edição de formas muito limitada, permitindo apenas formas geometricas basicas.
+  \item Necessario adição de plugins para permitir visualização do CSS dos componentes.
+  \item Sem suporte a edição de imagens, valendo-se do uso do Photoshop para tal.
+  \item Ainda em desenvolvimento, recebe alterações constante o que pode quebrar a experiencia do uso.
+  \item Apesar de gratuito durante a fase de desenvolvolvimento a Adobe pretente passar a cobrar mensalidade nos moldes de outras de suas ferramentas.
+\end{itemize}
 
-  O intuito desta primeira abordagem era o de separar os elementos existentes em elementos mais fundamentais que pudessem ser identificados como reaproveitáveis por componentes com hierarquias e complexidades mais elevadas. Esta separação segue uma sequência intuitiva de agrupamentos por átomos, moléculas e organismos, em que, átomos constituem os blocos fundamentais usados por moléculas, sendo estes estruturas um pouco mais complexas como por exemplo um campo de entrada de texto ou um botão, que por sua vez agrupados compõem organismos, estruturas ainda mais complexas que englobam múltiplos átomos e moléculas. Um exemplo dessa Composição e reaproveitamento pode ser visto na figura \ref{fig:mastercomponent}
+\section{Figma} \label{Figma}
 
-  \begin{figure}[h!]
-    \includegraphics[width=\linewidth]{mastercomponent.jpg}
-    \caption{Exemplo de Composição de elementos.}
-    \label{fig:mastercomponent}
-  \end{figure}
+O Figma foi lançado em 2016 com a proposta de ser uma ferramenta de design baseada inteiramente na nuvem. Ser um hub que permita prototipação
+e desgin colaborativo. Esta mentalidade e filosofia fez com que tornase-se uma das melhores ferramentas de prototipação e design disponiveis permitindo que times trabalhem no mesmo arquivo em tempo real.
 
-  \begin{citacao}[brazil]
-    \begin{itemize}
-      \item Atoms are the basic building blocks of all matter. Each chemical element has distinct properties, and they can’t be broken down further without losing their meaning. (Yes, it’s true atoms are composed of even smaller bits like protons, electrons, and neutrons, but atoms are the smallest functional unit.)
-      \item Molecules are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
-      \item Organisms are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
-    \end{itemize}
-    \cite{atomic_design}
-    \end{citacao}
+Como principais vantagens podemos destacar que é uma ferramenta totalmente baseada em nuvem, que suporta edição tanto no desktop (windows e mac) como no browser em que arquivos podem ser editados e testado tempo real pelas equipes envolvidas. Alem disso rescentemente passou a dar suporte a extensões e desenvolveu um app para android e ios chamado Figma Mirror que permite testes de prototipos usando essas plataformas mobile.
 
-  \begin{figure}[h!]
-    \includegraphics[width=\linewidth]{figma_010.jpg}
-    \caption{Resultado Da primeira iteração do Figma.}
-    \label{fig:tcenglib}
-  \end{figure}
+Algumas das vantagens do Figma:
+\begin{itemize}
+  \item Facilidade de trabalhar com grandes equipes em tempo real de forma transparente.
+  \item Compartilhamento de arquivos de maneira fácil e rápida na nuvem torna os elementos de design altamente acessiveis, pulando etapas de importação e exportação.
+  \item Por ser baseado em nuvem o figma se torna agnostico de plataformas.
+  \item A comunidade muito ativa vem criando uma ampla variedade de plugins.
+  \item Como ferramenta de prototipação e design integrados e baseado em nuvem permitindo desenvolvimento e teste colaborativo o Figma se torna um pacote completa para empresas.
+  \item Possui historico de versões semelhante ao Git.
+\end{itemize}
 
-\section{Teste de Execução e Problemas Encontrados} \label{secao33}
+Algumas desvantagens do Figma:
+\begin{itemize}
+  \item Possui muito poucas funcionalidades offilne.
+  \item Necessita de maquinas com desempenho intermediario para ater uma boa experiencia de uso'.
+  \item A ferramenta vem recebendo constantes alterações e evoluções que podem confundir o usuário.
+  \item Interface confusa.
+\end{itemize}
 
-  Após a criação do modelo existente o conjunto de compoentes criado com esse modelo foi utilizado para realizar a prototipação de um projeto de desenvolvimento de sistema em andamento no TCE-RN com o intuito de validar com o clientes, que era a Diretoria de Atos de Pessoal, as interfaces a serem concluídas junto com o sistema.
+\section{Ferramenta Adotada} \label{ferramenta_adotada}
 
-  Com a ajuda da bibliteca de componentes as telas do sistema foram criadas em algumas horas possuindo alta fidelidade e permitindo a experimentação dos clientes para testar os diferentes fluxos do sistema. Contudo, por causa da cultura do tribunal os testes de usabilidade não foram feitos de maneira extensiva e múltiplas alterações foram solicitadas ou descobertas outras necessidades durante a etapa em que o desenvolvimento da aplicação havia sido iniciado. Essas alterações passaram por novas fazes de validação por meio de prototipagem e ocorreram de forma mais rápida do que o desenvolvolvimento tradicional em que as alterações seriam feitas diretamente na aplicação no front para serem testadas e validadas junto ao cliente.
+O Figma possue serias limitações de trabalho quando a internet passa por problemas ou esta indisponivel, pois é inteiramente baseada em computação na nuvem, contudo é uma ferramenta capaz de concentrar a documentação os elementos do design e os prototipos de sistemas alem de permitir testes de usabilidade com um bom grau de fidelidade no fluxo de interações.
 
-  Durante essas refatorações foram encontrados alguns problemas com a escolha da arquitetura da biblioteca. A separação dos componentens usando o modelo atomico por si só e a estrutura de separação adotada não tornava a biblioteca de componentes intuitiva de ser usada. A nomenclatura dos componentes também poderia ser melhorada de modo a favorer localização e facilitar o uso desses componentes.
-  Por sua vez, a biblioteca de componentes criadas pelo tribunal usando Angular tinha uma amplitude muito grande no gradiente de cinza e possuía elementos que poderiam apresentar confusão dependendo da sua prioridade e estados como botões terciários habilitados e desabilitados que não comunicavam bem a sua função pois misturavam as tonalidades com seus estados secundários.
+Além disso o figma é capaz de rodar em maquinas com desempenho intermediario, não sendo tão exigente de hardware como Sketch por exmeplo. Quanto a precifiação o Figma assim como o AdobeXD é ofertado por meio de pacotes mensais, contratados por ano ou mes a mes. contudo o figma se posiciou por manter uma serie de funcionaliades gratuitas enquanto o AdobeXD não deu garantias de mante algum pacote de serviços disponiveis como freemium. Por fim a mensalidade do Figma ainda é menor que a planejada pela Adobe para a sua ferramenta.
 
-  \begin{figure}[h!]
-    \includegraphics[width=\linewidth]{buttons_old.jpg}
-    \caption{Diferentes estados de botões da biblioteca de compoentes do TCE-RN.}
-    \label{fig:buttons_old}
-  \end{figure}
-
-\section{O Nascimento De Um Proto Sistema De Design} \label{secao34}
-
-  A medida que se avançava o desenvolvimento deste trabalho, maior foi o contato com sistemas de design em estágios de desenvolvimento mais maduros ou consolidados como fonte de estudo e referência, então, notou-se que a complexidade e o esforço desprendido para a construção de um sistema de design mais abrangente, contendo não só uma biblioteca de componentes para prototipação mas também a sua implementação eram muito maiores do que eram possíveis obter da equipe dedicada a este trabalho. Surgiu então a ideia de se criar as diretrizes para a evolução da biblioteca de componentes atualmente existentes no TCE-RN, melhorando refinando o estilo dos elementos atualmente presentes para melhor comunicar a informação com os usuários, diminuindo as variações existentes para obter biblioteca com maior conformidade.
-
-  
-  \begin{wrapfigure}{l}{0.5\textwidth}
-    \includegraphics[width=\linewidth]{Component_Separation.jpg} 
-    \caption{Separação dos Componentes }
-    \label{fig:wrapfig}
-  \end{wrapfigure}
-  
-  Os elementos adicionados no Figma são classificados segundo a própria ferramenta como frames, groups e objects, enquanto os dois primeiros representam estruturas organizacionais o último compreende um outro conjunto de elementos como por exemplo textos, formas e imagens. A associação desses elementos é usada para criar componentes, que são as entidades mais importantes do Figma usadas para representar os itens do nosso SD.
-
-  Um arquivo do Figma separa a estrutura de interação com os elementos em dois grandes grupos, layers, onde se encontram páginas que contém elementos que podem ser trabalhados, e assets, que contém apenas elementos mestres para importação em páginas na forma de instâncias dos mestres. Em assets também encontramos quais elementos estão disponíveis para serem exportados para a biblioteca de componentes.
-
-  Chegar em uma boa estruturação dos componentes para exportação da biblioteca e viabilizar uma experiência fácil e intuitiva no desenvolvimento de protótipos é um dos objetivos principais desse trabalho e o modo como foi dividido se acredita ter chegado em um estado organizacional satisfatório apesar da falta de testes de usabilidade extensivos.
-
-  No fim, valendo-se de uma funcionlidade do Figma de tornar páginas com nomes iniciados com sublinhado próprias apenas para o uso interno o projeto seguiu a seguinte estruturação: \underline{ }subComponents contém elementos herdados da arquitetura atomica inicialmente desenvolvida, esta página contém elementos que são fundamentalmente utilizados em outras estruturas e em tese não deveriam ter seus elementos subdivididos nem usados independentemente. Na sequência cada página contendo elementos em um frame respectivo a suas versões web sendo esses Buttons, Cards, Communication, Navigation, Input\underline{ }Text, Input\underline{ }State, Data\underline{ }Table, Pickers, Shell Colors, Typography, Icons.
-
-  Adicionalmente uma página contendo exemplos de construção de telas foi adicionada a biblioteca para melhor guiar o desenvolvimento de templates por parte dos utilizadores do sistema de design assim como uma página introdutória, contendo explicações sobre a separação do documento assim como os meios para utilizar a biblioteca. Por último, uma página com um guia contendo os estilos e como aplicar diferentes elevações a elementos do front-end para inciar o desenvolvimento de elementos para dispositivos móveis.
+Por esses motivos o figma foi escolhido como ferramenta de design e prototipagem usada neste trabalho.
